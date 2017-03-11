@@ -7,9 +7,20 @@
   "author": "Francesco Strazzullo <francesco.strazzullo86@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "jest": "^19.0.2"
+    "babel-jest": "^19.0.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "jest": "^19.0.2",
+    "standard": "^9.0.1"
   },
-  "scripts":{
+  "scripts": {
     "test": "jest"
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "it",
+      "expect"
+    ]
   }
 }
