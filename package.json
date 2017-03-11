@@ -1,0 +1,15 @@
+{
+  "name": "js-date-testing-examples",
+  "version": "1.0.0",
+  "description": "Examples on how to test dates in JavaScript",
+  "main": "index.js",
+  "repository": "git@github.com:francesco-strazzullo/js-date-testing-examples.git",
+  "author": "Francesco Strazzullo <francesco.strazzullo86@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^19.0.2"
+  },
+  "scripts":{
+    "test": "jest"
+  }
+}
