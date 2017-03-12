@@ -20,7 +20,9 @@
     "globals": [
       "describe",
       "it",
-      "expect"
+      "expect",
+      "beforeAll",
+      "afterAll"
     ]
   }
 }
