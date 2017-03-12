@@ -5,4 +5,4 @@ export const areSecondsElapsedFromNowFactory = now => {
   }
 }
 
-export const areSecondsElapsedFromNow = areSecondsElapsedFromNowFactory(Date.now)
+export default areSecondsElapsedFromNowFactory(Date.now)
