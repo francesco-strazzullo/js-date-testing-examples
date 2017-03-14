@@ -1,15 +1,14 @@
 import areSecondsElapsedFromNow from './mocking'
+import timekeeper from 'timekeeper'
 
-let originalNow = Date.now
-let originalGetTime = Date.prototype.getTime
 let date
 
-/* eslint-disable no-extend-native */
-describe('areSecondsElapsedFromNow - mocking', () => {
+describe('areSecondsElapsedFromNow - timekeeper', () => {
   beforeAll(() => {
-    date = new Date()
-    Date.now = () => 0
-    Date.prototype.getTime = () => 5000
+    timekeeper.freeze(new Date(0))
+    date = {
+      getTime: () => 5000
+    }
   })
 
   it('should return false if less seconds than the second parameter are passed', () => {
@@ -25,7 +24,6 @@ describe('areSecondsElapsedFromNow - mocking', () => {
   })
 
   afterAll(() => {
-    Date.now = originalNow
-    Date.prototype.getTime = originalGetTime
+    timekeeper.freeze(new Date(0))
   })
 })

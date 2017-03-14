@@ -5,7 +5,7 @@ const dummyDate = {
   getTime: () => 5000
 }
 
-describe('areSecondsElapsedFromNow', () => {
+describe('areSecondsElapsedFromNow - dependency injection', () => {
   it('should return false if less seconds than the second parameter are passed', () => {
     expect(areSecondsElapsedFromNow(dummyDate, 4)).toBe(false)
   })

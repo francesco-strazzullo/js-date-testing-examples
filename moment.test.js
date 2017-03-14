@@ -4,8 +4,7 @@ import { fn } from 'moment'
 let originalDuration = fn.diff
 let date
 
-/* eslint-disable no-extend-native */
-describe('areSecondsElapsedFromNow', () => {
+describe('areSecondsElapsedFromNow - moment', () => {
   beforeAll(() => {
     fn.diff = () => 5000
   })
