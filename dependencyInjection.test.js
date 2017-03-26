@@ -1,9 +1,11 @@
 import { areSecondsElapsedFromNowFactory } from './dependencyInjection'
 
-const areSecondsElapsedFromNow = areSecondsElapsedFromNowFactory(() => 0)
+const now = () => 0
 const dummyDate = {
   getTime: () => 5000
 }
+
+const areSecondsElapsedFromNow = areSecondsElapsedFromNowFactory(now)
 
 describe('areSecondsElapsedFromNow - dependency injection', () => {
   it('should return false if less seconds than the second parameter are passed', () => {

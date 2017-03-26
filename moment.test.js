@@ -2,7 +2,7 @@ import areSecondsElapsedFromNow from './moment'
 import { fn } from 'moment'
 
 let originalDuration = fn.diff
-let date
+let date = new Date()
 
 describe('areSecondsElapsedFromNow - moment', () => {
   beforeAll(() => {
