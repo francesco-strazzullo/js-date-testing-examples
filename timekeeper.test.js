@@ -24,6 +24,6 @@ describe('areSecondsElapsedFromNow - timekeeper', () => {
   })
 
   afterAll(() => {
-    timekeeper.freeze(new Date(0))
+    timekeeper.reset()
   })
 })
